@@ -6,8 +6,10 @@
 
 	2) Execute the function!
 */
-
-
+	function mash () {
+		console.log( getHome() );
+	}
+	mash();
 
 
 
@@ -18,12 +20,19 @@
 		i)HINT: Use an array to store the strings
 		ii)HINT: Use Math.random() to choose a random index
 */
-
-
+	function getHome () {
+		var differentHouses = ["Mansion", "Apartment", "Trailer", "Boat"]
+		var rand = Math.random()*differentHouses.length;
+		rand = Math.floor(rand);
+		var randomhouse = differentHouses[rand]
+		return (randomhouse);
+	}
+	
 
 
 
 /*
+
 	4)Go back to the 'mash' function you wrote above
 		i)Delete the statement in 'mash' that prints 'House'
 		ii)Execute the 'getHome' function inside the 'mash' function
@@ -31,7 +40,9 @@
 	5)Create a new function called 'getChildrenCount' that takes no parameters and 
 	returns a number between 0 and 100
 */
-
+	function getChildrenCount () {
+	
+	}
 
 
 /*
